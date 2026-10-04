@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Concept redesign for Spark Creative Design — Sacramento graphic design, branding, publications, illustration, print and promotional materials.">
+<title>Spark Creative Design — Concept Redesign</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{--ink:#121212;--paper:#f5f1e8;--hot:#ff5b35;--lime:#d9ff58;--blue:#7dd7ff;--line:rgba(18,18,18,.18)}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(245,241,232,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 22px "Space Grotesk";display:flex;align-items:center;gap:10px}
+.spark{width:22px;height:22px;background:var(--hot);clip-path:polygon(50% 0,61% 38%,100% 50%,61% 62%,50% 100%,39% 62%,0 50%,39% 38%)}
+.links{display:flex;gap:28px;font-weight:600}.cta{background:var(--ink);color:white;padding:13px 18px;border-radius:999px}
+.hero{padding:78px 0 44px}.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:12px}
+h1{font:700 clamp(56px,10vw,132px)/.86 "Space Grotesk";letter-spacing:-.07em;margin:22px 0 28px;max-width:1100px}
+h1 .accent{color:var(--hot)}.lead{font-size:clamp(18px,2.2vw,28px);line-height:1.35;max-width:720px;margin-left:auto}
+.marquee{overflow:hidden;border-block:1px solid var(--ink);padding:16px 0;margin:40px 0 0;background:var(--lime)}
+.track{white-space:nowrap;font:700 17px "Space Grotesk";animation:roll 24s linear infinite}@keyframes roll{to{transform:translateX(-50%)}}
+.section{padding:100px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:42px}.sectionhead h2{font:700 clamp(38px,6vw,76px)/.95 "Space Grotesk";letter-spacing:-.05em;margin:0}.sectionhead p{max-width:450px;font-size:18px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.service{padding:28px 20px 44px 0;border-bottom:1px solid var(--ink);min-height:190px;position:relative}.service:nth-child(3n+2),.service:nth-child(3n+3){padding-left:22px;border-left:1px solid var(--ink)}
+.num{font-size:12px;opacity:.55}.service h3{font:600 26px "Space Grotesk";margin:28px 0 10px}.service p{margin:0;line-height:1.55;opacity:.72}
+.work{background:var(--ink);color:white}.cards{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.card{border-radius:24px;min-height:430px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}
+.card:nth-child(1){background:var(--blue);color:var(--ink)}.card:nth-child(2){background:var(--hot)}.card:nth-child(3){background:#eee;color:var(--ink)}.card:nth-child(4){background:var(--lime);color:var(--ink)}
+.card h3{font:700 clamp(30px,4vw,54px)/1 "Space Grotesk";letter-spacing:-.04em;margin:0}.card p{max-width:440px;font-size:17px}
+.portimg{width:100%;height:280px;object-fit:cover;border-radius:16px;margin:18px 0;cursor:zoom-in;box-shadow:0 12px 40px rgba(0,0,0,.15)}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex}.lightbox img{max-width:94vw;max-height:90vh;border-radius:12px}.lightbox button{position:absolute;right:22px;top:18px;border:0;background:white;color:#111;width:44px;height:44px;border-radius:50%;font-size:25px;cursor:pointer}
+.demo-note{background:#fff3c4;border-bottom:1px solid var(--line);padding:9px 18px;text-align:center;font-size:13px;font-weight:600}
+.art{position:absolute;width:220px;height:220px;right:-30px;bottom:-40px;border:2px solid currentColor;border-radius:50%;opacity:.5}.art:before,.art:after{content:"";position:absolute;inset:28px;border:2px solid currentColor;transform:rotate(45deg)}.art:after{inset:62px;border-radius:50%}
+.quote{font:500 clamp(30px,4.5vw,62px)/1.1 "Space Grotesk";letter-spacing:-.04em;max-width:980px}.quote small{display:block;font:600 15px "DM Sans";letter-spacing:0;margin-top:28px}
+.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:60px}.bigcopy{font:600 clamp(32px,4.5vw,58px)/1.05 "Space Grotesk";letter-spacing:-.04em}.bodycopy{font-size:19px;line-height:1.65}
+.contact{background:var(--hot);padding:90px 0}.contact h2{font:700 clamp(52px,9vw,118px)/.9 "Space Grotesk";letter-spacing:-.065em;margin:0 0 35px}.contactrow{display:flex;justify-content:space-between;align-items:center;gap:30px}.button{display:inline-block;background:var(--ink);color:#fff;padding:17px 25px;border-radius:999px;font-weight:700}.contactmeta{text-align:right;line-height:1.7}
+footer{padding:26px 0;background:var(--ink);color:#fff}.foot{display:flex;justify-content:space-between;gap:20px;opacity:.75;font-size:14px}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:760px){.links a:not(.cta){display:none}.hero{padding-top:52px}.lead{margin-left:0}.section{padding:72px 0}.sectionhead,.aboutgrid,.contactrow{display:block}.services{grid-template-columns:1fr}.service,.service:nth-child(3n+2),.service:nth-child(3n+3){padding:24px 0;border-left:0}.cards{grid-template-columns:1fr}.card{min-height:340px}.contactmeta{text-align:left;margin-top:26px}.foot{display:block}.foot div+div{margin-top:8px}}
+</style>
+</head>
+<body>
+<div class="demo-note">UNOFFICIAL REDESIGN CONCEPT • Portfolio artwork shown from Spark Creative Design’s public website</div>
+<nav><div class="wrap navin"><a class="brand" href="#"><span class="spark"></span>Spark Creative Design</a><div class="links"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a class="cta" href="#contact">Start a project ↗</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="eyebrow">Independent graphic design • Sacramento, California</div>
+<h1>Ideas with <span class="accent">spark.</span><br>Design with purpose.</h1>
+<p class="lead">Solid design, thoughtful collaboration, and creative work that helps organizations communicate clearly and look unforgettable.</p>
+</div>
+<div class="marquee"><div class="track">BRANDING ✦ LOGOS ✦ PUBLICATION DESIGN ✦ ILLUSTRATION ✦ DIRECT MAIL ✦ PROMO MATERIALS ✦ APPAREL ✦ SIGNS ✦ BRANDING ✦ LOGOS ✦ PUBLICATION DESIGN ✦ ILLUSTRATION ✦ DIRECT MAIL ✦ PROMO MATERIALS ✦ APPAREL ✦ SIGNS ✦ </div></div>
+</header>
+
+<section id="services" class="section"><div class="wrap reveal">
+<div class="sectionhead"><h2>What we do.</h2><p>From a first logo sketch to a complete family of printed materials, Spark builds visual systems that stay consistent and work hard.</p></div>
+<div class="services">
+<div class="service"><span class="num">01</span><h3>Logo & Branding</h3><p>Distinctive identities, brand systems, business cards, letterhead and practical brand handbooks.</p></div>
+<div class="service"><span class="num">02</span><h3>Publication Design</h3><p>Clear, engaging layouts for magazines, reports, guides and other information-rich publications.</p></div>
+<div class="service"><span class="num">03</span><h3>Outreach Materials</h3><p>Brochures, presentation folders, educational materials and campaigns made to connect.</p></div>
+<div class="service"><span class="num">04</span><h3>Custom Illustration</h3><p>Original graphics and illustrations shaped around the message instead of forced into a template.</p></div>
+<div class="service"><span class="num">05</span><h3>Direct Mail</h3><p>Design support for direct-mail pieces and EDDM campaigns that are ready to get noticed.</p></div>
+<div class="service"><span class="num">06</span><h3>Signs, Apparel & Promo</h3><p>Brand-consistent decals, signs, apparel and promotional materials for the real world.</p></div>
+</div></div></section>
+
+<section id="work" class="section work"><div class="wrap reveal">
+<div class="sectionhead"><h2>Selected work.</h2><p>A concept portfolio layout based on project names shown publicly by Spark Creative Design.</p></div>
+<div class="cards">
+<article class="card"><div><span class="eyebrow">Publication design</span><h3>ScienceWriters Magazine</h3>
+<img class="portimg" loading="lazy" alt="ScienceWriters Magazine design by Spark Creative Design" src="https://sparkcreativedesign.com/wp-content/uploads/2016/07/ScienceWriters-Summer22-cvr-IG.jpg"></div>
+<p>Editorial design that turns information into a colorful, readable visual experience.</p></article>
+<article class="card"><div><span class="eyebrow">Outreach design</span><h3>San Mateo County Vector Control</h3>
+<img class="portimg" loading="lazy" alt="Vector control infographic by Spark Creative Design" src="https://sparkcreativedesign.com/wp-content/uploads/2016/07/SMCMVCD-Infographics-Bottle-Cap-5x5-1.jpg"></div>
+<p>Clear public-information graphics built to make an important message easy to understand.</p></article>
+<article class="card"><div><span class="eyebrow">Campaign graphics</span><h3>Mosquito & Vector Control</h3>
+<img class="portimg" loading="lazy" alt="Mosquito control campaign graphic by Spark Creative Design" src="https://sparkcreativedesign.com/wp-content/uploads/2016/07/Placer23-SM-1080x1080-1.jpg"></div>
+<p>Bold campaign artwork designed to stop the scroll and communicate fast.</p></article>
+<article class="card"><div><span class="eyebrow">Custom illustration</span><h3>Character Illustration</h3>
+<img class="portimg" loading="lazy" alt="Custom character illustration by Spark Creative Design" src="https://sparkcreativedesign.com/wp-content/uploads/2016/07/Greenkiwi-scoopy-md.png"></div>
+<p>Original illustration that gives a brand its own recognizable personality.</p></article>
+</div></div></section>
+
+<section class="section"><div class="wrap reveal">
+<div class="quote">“Your design skills never cease to create delight.”<small>— Tinsley Davis, Executive Director, National Association of Science Writers</small></div>
+</div></section>
+
+<section id="about" class="section"><div class="wrap aboutgrid reveal">
+<div class="bigcopy">Good design should make the whole project feel easier.</div>
+<div class="bodycopy"><p>Spark Creative Design was built around solid design, timely delivery and high service standards. The goal is an easy creative partnership that keeps the client’s needs at the center.</p><p>Whether the project is a new identity, a publication, an illustration or a full set of branded materials, the process stays collaborative from first idea to final files.</p></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap reveal">
+<h2>Let’s make<br>something good.</h2>
+<div class="contactrow"><a class="button" href="tel:+19166068116">Call (916) 606-8116 ↗</a><div class="contactmeta">Sacramento, California<br>1153 34th Ave • Sacramento, CA 95822</div></div>
+</div></section>
+
+<footer><div class="wrap foot"><div>© Spark Creative Design — concept redesign</div><div>Unofficial demo created for presentation purposes.</div></div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+const lb=document.createElement('div'); lb.className='lightbox'; lb.innerHTML='<button aria-label="Close">×</button><img alt="Expanded portfolio work">'; document.body.appendChild(lb);
+document.querySelectorAll('.portimg').forEach(img=>img.addEventListener('click',()=>{lb.querySelector('img').src=img.src;lb.classList.add('open')}));
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.tagName==='BUTTON')lb.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+</script>
+</body></html>
